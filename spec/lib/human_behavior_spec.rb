@@ -1,9 +1,9 @@
 require "spec_helper"
 
 describe "Human Behavior" do
-	it "can grab text" do
-		method = grab /h/, from: "hello"
-		method.fetch(0).should eq "h"
+  it "can grab text" do
+    method = grab /h/, from: "hello"
+	  method.fetch(0).should eq "h"
 	end
 
   it "can verify the presence of a string" do
