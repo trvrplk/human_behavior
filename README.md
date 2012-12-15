@@ -1,57 +1,13 @@
-# human_behavior
+# Human Behavior -- A Tool For Reading Language
 
-* FIX (url)
+![Bjork](http://upload.wikimedia.org/wikipedia/en/5/51/Bjork%2C_Debut_album_cover%2C_1993.jpg)
 
-## DESCRIPTION:
+<iframe src="https://embed.spotify.com/?uri=spotify:track:5OnyZ56HLhrWOXdzeETqLk" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 
-FIX (describe your package)
+Much like the Bjork song, this library is awesome.
 
-## FEATURES/PROBLEMS:
+## Copyright
 
-* FIX (list of features or problems)
+Copyright (c) 2012 bagelstability. See LICENSE.txt for
+further details.
 
-## SYNOPSIS:
-
-  FIX (code sample of usage)
-
-## REQUIREMENTS:
-
-* FIX (list of requirements)
-
-## INSTALL:
-
-* FIX (sudo gem install, anything else)
-
-## DEVELOPERS:
-
-After checking out the source, run:
-
-  $ rake newb
-
-This task will install any missing dependencies, run the tests/specs,
-and generate the RDoc.
-
-## LICENSE:
-
-(The MIT License)
-
-Copyright (c) 2012 FIX
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
