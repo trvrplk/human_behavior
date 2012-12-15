@@ -13,6 +13,6 @@ Much like the Bjork song, this library is awesome.
 
 ## Copyright
 
-Copyright (c) 2012 bagelstability. See LICENSE.txt for
+Copyright (c) 2012 weddingcakes. See LICENSE.txt for
 further details.
 
