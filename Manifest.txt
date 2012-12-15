@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/human_behavior
+lib/human_behavior.rb
+test/test_human_behavior.rb

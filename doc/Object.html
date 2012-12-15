@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-<title>class HumanBehavior - human_behavior </title>
+<title>class Object - human_behavior-0.borked Documentation</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -59,7 +59,7 @@
     <nav id="parent-class-section" class="section">
   <h3 class="section-header">Parent</h3>
   
-  <p class="link">Object
+  <p class="link">BasicObject
   
 </nav>
 
@@ -72,19 +72,32 @@
     
     <li><a href="#method-i-grab">#grab</a>
     
+    <li><a href="#method-i-validate_that">#validate_that</a>
+    
   </ul>
 </nav>
 
   </div>
 
   <div id="project-metadata">
-    
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./History_txt.html">History</a>
+  
+    <li class="file"><a href="./Manifest_txt.html">Manifest</a>
+  
+  </ul>
+</nav>
+
     <nav id="classindex-section" class="section project-section">
   <h3 class="section-header">Class and Module Index</h3>
 
   <ul class="link-list">
   
-    <li><a href="./HumanBehavior.html">HumanBehavior</a>
+    <li><a href="./Object.html">Object</a>
   
   </ul>
 </nav>
@@ -93,7 +106,7 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="class">class HumanBehavior</h1>
+  <h1 class="class">class Object</h1>
 
   <div id="description" class="description">
     
@@ -128,8 +141,10 @@
 
         <div class="method-description">
           
-          <p>rexp - Regexp to search with <a href="http://:from">opts</a> - String to
-search in Example:</p>
+          <p>Public: Grab content out of a string. Returns an array of each match.</p>
+
+<p>rexp        - Regexp to search with <a href="http://:from">opts</a> -
+String to search in Example:</p>
 
 <pre class="ruby"><span class="ruby-identifier">method</span> = <span class="ruby-identifier">grab</span> <span class="ruby-regexp">%rh/</span>, <span class="ruby-identifier">from</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;hello&quot;</span>
 <span class="ruby-comment"># =&gt; ['h']</span>
@@ -138,7 +153,7 @@ search in Example:</p>
 
           
           <div class="method-source-code" id="grab-source">
-            <pre><span class="ruby-comment"># File lib/human_behavior.rb, line 10</span>
+            <pre><span class="ruby-comment"># File lib/human_behavior.rb, line 9</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">grab</span>(<span class="ruby-identifier">rexp</span>, <span class="ruby-identifier">opts</span>={})
   <span class="ruby-identifier">str</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:from</span>]
   <span class="ruby-identifier">str</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-identifier">rexp</span>)
@@ -151,6 +166,43 @@ search in Example:</p>
 
         
       </div><!-- grab-method -->
+
+    
+      <div id="method-i-validate_that" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">validate_that</span><span
+            class="method-args">(rexp, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>rexp - Regexp to search with <a href="http://:is_inside">opts</a> - String
+to search in Example:</p>
+
+<pre class="ruby"><span class="ruby-identifier">validates_that</span> <span class="ruby-regexp">%rh/</span>, <span class="ruby-identifier">is_inside</span><span class="ruby-operator">:</span> <span class="ruby-string">'hello'</span>
+<span class="ruby-comment"># =&gt; true</span>
+</pre>
+          
+
+          
+          <div class="method-source-code" id="validate_that-source">
+            <pre><span class="ruby-comment"># File lib/human_behavior.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">validate_that</span>(<span class="ruby-identifier">rexp</span>, <span class="ruby-identifier">opts</span>={})
+  <span class="ruby-identifier">str</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:is_inside</span>]
+  <span class="ruby-identifier">conditional</span> = <span class="ruby-identifier">rexp</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">str</span>
+  <span class="ruby-keyword">true</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">conditional</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- validate_that-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- validate_that-method -->
 
     
     </section><!-- public-instance-method-details -->
